@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import { Box } from '@mui/material';
+
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+
+const darkTheme = createTheme({
+  // ... your theme definition
+  palette: {
+    mode: 'dark',
+    primary: { main: '#9c27b0' },
+    background: { default: '#121212', paper: '#121212' },
+  },
+  typography: { fontFamily: 'Roboto, Arial, sans-serif' },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      
+      <Navbar />
+
+      <main>
+        <Home />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+        
+      </main>
+    </ThemeProvider>
   );
 }
 
