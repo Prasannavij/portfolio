@@ -106,6 +106,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import DownloadIcon from '@mui/icons-material/Download';
+import resumeFile from '../assets/resume.pdf';
 
 // The links for our portfolio
 const navItems = [
@@ -174,7 +175,7 @@ const Navbar = () => {
                variant="outlined"
                color="primary"
                startIcon={<DownloadIcon />}
-               href="https://drive.google.com/file/d/1mRCHlBeros2jBQVPmhbPWPNtXIjRlKyi/preview"
+               href={resumeFile}
                target="_blank"
                sx={{ ml: 2 }}
             >
