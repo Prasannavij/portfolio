@@ -110,6 +110,7 @@ import React from 'react';
 // Add Button and an Icon to the imports
 import { Box, Typography, Button } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
+import resumeFile from '../assets/resume.pdf';
 
 const About = () => {
   return (
@@ -187,20 +188,18 @@ const About = () => {
           
           {/* --- ADD THIS BUTTON --- */}
           <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            startIcon={<DownloadIcon />}
-            // This component is an 'a' tag under the hood
-            component="a" 
-            // The href points to the file in your `public` folder
-            href="https://drive.google.com/file/d/1mRCHlBeros2jBQVPmhbPWPNtXIjRlKyi/preview" 
-            // These attributes make it open in a new tab securely
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View My Resume
-          </Button>
+          variant="contained"
+          color="primary"
+          size="large"
+          startIcon={<DownloadIcon />}
+          component="a"
+          href={resumeFile} // Ensure you have a resume.pdf in your public folder
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View My Resume
+        </Button>
+
           {/* --- END OF BUTTON --- */}
 
         </Box>
