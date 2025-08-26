@@ -174,7 +174,7 @@ const Navbar = () => {
                variant="outlined"
                color="primary"
                startIcon={<DownloadIcon />}
-               href="https://drive.google.com/file/d/1mRCHlBeros2jBQVPmhbPWPNtXIjRlKyi/view?usp=drivesdk"
+               href="https://drive.google.com/file/d/1mRCHlBeros2jBQVPmhbPWPNtXIjRlKyi/preview"
                target="_blank"
                sx={{ ml: 2 }}
             >
