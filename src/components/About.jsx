@@ -194,7 +194,7 @@ const About = () => {
             // This component is an 'a' tag under the hood
             component="a" 
             // The href points to the file in your `public` folder
-            href="https://drive.google.com/file/d/1mRCHlBeros2jBQVPmhbPWPNtXIjRlKyi/view?usp=drivesdk" 
+            href="https://drive.google.com/file/d/1mRCHlBeros2jBQVPmhbPWPNtXIjRlKyi/preview" 
             // These attributes make it open in a new tab securely
             target="_blank"
             rel="noopener noreferrer"
