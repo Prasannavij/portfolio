@@ -193,7 +193,7 @@ const About = () => {
           size="large"
           startIcon={<DownloadIcon />}
           component="a"
-          https://prasannavij.github.io/portfolio/resume.pdf // Ensure you have a resume.pdf in your public folder
+          href={`https://prasannavij.github.io/portfolio/resume.pdf`} // Ensure you have a resume.pdf in your public folder
           target="_blank"
           rel="noopener noreferrer"
         >
