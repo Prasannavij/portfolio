@@ -175,7 +175,7 @@ const Navbar = () => {
                variant="outlined"
                color="primary"
                startIcon={<DownloadIcon />}
-               href={`${process.env.PUBLIC_URL}/resume.pdf`}
+               href={`https://prasannavij.github.io/portfolio/resume.pdf`}
                target="_blank"
                sx={{ ml: 2 }}
             >
