@@ -110,7 +110,7 @@ import React from 'react';
 // Add Button and an Icon to the imports
 import { Box, Typography, Button } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
-import resumeFile from '../assets/resume.pdf';
+import resumeFile from '../assets/logos/resume.pdf';
 
 const About = () => {
   return (
@@ -193,7 +193,7 @@ const About = () => {
           size="large"
           startIcon={<DownloadIcon />}
           component="a"
-          href={`https://prasannavij.github.io/portfolio/resume.pdf`} // Ensure you have a resume.pdf in your public folder
+          href={resumeFile} // Ensure you have a resume.pdf in your public folder
           target="_blank"
           rel="noopener noreferrer"
         >
