@@ -193,7 +193,7 @@ const About = () => {
           size="large"
           startIcon={<DownloadIcon />}
           component="a"
-          href={resumeFile} // Ensure you have a resume.pdf in your public folder
+          href={`${process.env.PUBLIC_URL}/resume.pdf`} // Ensure you have a resume.pdf in your public folder
           target="_blank"
           rel="noopener noreferrer"
         >
